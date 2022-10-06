@@ -11,11 +11,13 @@ Provide liquidity for fast withdrawals in exchange for fee emissions (at the ris
 ## Progress
 
 - [x] Send fast transfer and portal transfer
-- [ ] Redeem fast transfer to user, 1% to pool
+- [ ] Redeem fast transfer to user, sans 1% to pool / 1% to protocol
 - [ ] Redeem portal transfer to pool
 - [ ] Setup pool via creating and registering of LP token
 - [ ] Portal ABI parity
 - [ ] Ownable and owner-only registration
+- [ ] Specialized relayer to relay fast and portal transfers
+- [ ] Simple UI
 
 ## Disclaimer
 
