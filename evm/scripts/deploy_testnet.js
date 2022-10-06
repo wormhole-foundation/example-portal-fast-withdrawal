@@ -8,12 +8,12 @@ const fs = require("fs");
 module.exports = async function (callback) {
   try {
     const ft = await FastTransfer.new(
-      CONTRACTS.DEVNET.ethereum.core,
-      CONTRACTS.DEVNET.ethereum.token_bridge
+      CONTRACTS.TESTNET.ethereum.core,
+      CONTRACTS.TESTNET.ethereum.token_bridge
     );
     console.log("tx: " + ft.transactionHash);
     console.log("FastTransfer address: " + ft.address);
-    addresses.devnet = ft.address;
+    addresses.testnet = ft.address;
     fs.writeFileSync("./addresses.json", JSON.stringify(addresses));
     callback();
   } catch (e) {
