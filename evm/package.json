@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run generate && tsc && jest --config jestconfig.json --verbose",
-    "genTypes": "typechain --target ethers-v5 --out-dir ethers-contracts/abi --show-stack-traces ./build/contracts/*.json",
-    "generate": "rimraf lib && rimraf ethers-contracts && rimraf build && truffle compile && npm run genTypes",
     "build": "truffle compile",
-    "truffle": "truffle"
+    "deploy-devnet": "truffle compile && truffle exec scripts/deploy_devnet.js --network development"
   },
   "author": "",
   "license": "ISC",
