@@ -3,3 +3,7 @@
 /lib/
 /node_modules/
 addresses.json
+anvil.log
+deploy.out
+cache
+broadcast
